@@ -55,6 +55,7 @@ body {
 }
 body div, header {
     background-color: white;
+    text-align: center;
 }
 h2 {
     text-align: center;
