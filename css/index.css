@@ -50,7 +50,17 @@
 
 body {
     background-color: #efefef;
+    margin: 0% 15%;
 }
-body div {
+body div, header {
     background-color: white;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+}
+p {
+    text-align: justify;
+    padding: 1rem;
 }
