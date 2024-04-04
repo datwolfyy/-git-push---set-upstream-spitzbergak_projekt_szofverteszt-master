@@ -83,12 +83,19 @@ body>img {
     object-fit: cover;
 }
 
+@media screen and (max-width: 650px) {
+    body {
+        margin: 0 0 2%;
+    }
+}
+
 /* Navigáció */
 
 #navbar {
     position: sticky;
     top: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #333;
     width: 100%;
@@ -120,7 +127,7 @@ body>img {
 }
 
 #galeria div img {
-    width: 400px;
+    width: 90%;
     height: auto;
     border: 1px solid #ffffff
 }
