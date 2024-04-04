@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
+/* Betűtípus */
+
 .merriweather-light {
     font-family: "Merriweather", serif;
     font-weight: 300;
@@ -48,16 +50,17 @@
     font-style: italic;
 }
 
+/* */
+
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: "Merriweather", serif;
     background-color: #efefef;
-    margin: 0% 15%;
+    margin: 0 15% 2%;
 }
-body div, header {
+body div, h1 {
     background-color: white;
     text-align: center;
 }
@@ -72,13 +75,33 @@ p {
 }
 h1 {
     text-align: center;
-    padding-bottom: 15px;
+    padding: 15px;
 }
-header img{
+body>img {
     width: 100%;
     height: 30vh;
     object-fit: cover;
 }
+
+/* Navigáció */
+
+#navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    width: 100%;
+}
+
+#navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+/* Galéria */
 
 #galeria>div {
     display: flex;
@@ -87,55 +110,17 @@ header img{
     margin: 0 2%;
 }
 
-/* Navbar */
-
-/* Style the navbar */
-#navbar {
-    overflow: hidden;
-    background-color: #333;
-    width: 100%;
-  }
-  
-  /* Navbar links */
-  #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
-  
-  /* Page content */
-  .content {
-    padding: 16px;
-  }
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    margin: 0 -15%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
-
-/* Galéria */
-
-div.gallery {
+#galeria>div>div {
     margin: 5px;
     width: 400px;
-    border: 1px solid #ffffff
-  }
-  
-  div.gallery:hover {
+}
+
+#galeria div img:hover {
     border: 1px solid #777;
-  }
-  
-  div.gallery img {
+}
+
+#galeria div img {
     width: 400px;
     height: auto;
-  }
+    border: 1px solid #ffffff
+}
