@@ -110,24 +110,32 @@ body>img {
 
 /* Galéria */
 
-#galeria>div {
+#galeria>div, #kepek {
     display: flex;
     flex: auto;
-    flex-wrap: wrap;
     margin: 0 2%;
 }
 
-#galeria>div>div {
+#galeria>div {
+    flex-wrap: wrap;
+}
+
+#kepek {
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#galeria>div>div, #kepek>div {
     margin: 5px;
     width: 400px;
 }
 
-#galeria div img:hover {
+#galeria div img:hover, #kepek div img:hover {
     border: 1px solid #777;
 }
 
-#galeria div img {
+#galeria div img, #kepek div img {
     width: 90%;
     height: auto;
-    border: 1px solid #ffffff
+    border: 1px solid white;
 }
