@@ -50,19 +50,19 @@
     font-style: italic;
 }
 
-/* */
 
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: "Merriweather", serif;
-    background-color: #efefef;
+    background-color: #b0bec5;
     margin: 0 15% 2%;
 }
 body div, h1 {
-    background-color: white;
+    background-color: #efefef;
     text-align: center;
+    border-radius: 3px;
 }
 h2 {
     text-align: center;
