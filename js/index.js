@@ -2,13 +2,10 @@
 
 window.onscroll = function() {stickyNavbar()};
 
-// Get the navbar
 var navbar = document.getElementById("navbar");
 
-// Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyNavbar() {
   if (window.scrollY >= sticky) {
     navbar.classList.add("sticky")
@@ -17,12 +14,8 @@ function stickyNavbar() {
   }
 }
 
-
-//Select
-
-
-
 window.addEventListener("load", () => {
+    // select
     const optionSelector = document.getElementById('optionSelector');
     const allatContent = document.getElementById('allatContent');
     optionSelector.addEventListener('change', function() {
@@ -45,7 +38,8 @@ window.addEventListener("load", () => {
         }
   
         allatContent.innerHTML = `<div class="selectedContent">${selectedContent}</div>`;
-    });  
+    });
+    // random képek lekérése a fejléc alá 
     let kep_divek = document.querySelectorAll("#kepek div");
     kep_divek.forEach(async (div) => {
         let kep = document.createElement("img");
