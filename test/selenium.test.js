@@ -35,6 +35,11 @@ function sleep(time) {
         let galeria_link = await driver.findElement(By.css("#navbar a[href=\"#galeria\"]"));
         await actions.move({origin: galeria_link}).click().perform();
 
+        let size = await driver.manage().window().getSize();
+        let w = size.width;
+        let h = size.height;
+        console.log("Böngészőablak szélessége: " + w + ", hosszúsága: " + h);    
+
         var idx = Math.round(Math.random() * 10);
         console.log("random index: "+ idx);
         let galeria_kepek = await driver.findElements(By.css("#galeria img"));
