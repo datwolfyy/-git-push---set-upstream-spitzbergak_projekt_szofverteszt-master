@@ -1,0 +1,25 @@
+{
+  "name": "spitzbergak_projekt_szoftverteszt",
+  "version": "1.0.0",
+  "description": "Szoftvertesztelés projekt",
+  "main": "index.js",
+  "scripts": {
+    "mocha": "mocha index.js"
+	"cy:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datwolfyy/spitzbergak_projekt_szoftverteszt.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/datwolfyy/spitzbergak_projekt_szoftverteszt/issues"
+  },
+  "homepage": "https://github.com/datwolfyy/spitzbergak_projekt_szoftverteszt#readme",
+  "dependencies": {
+    "cypress": "^13.8.1",
+    "mocha": "^10.4.0",
+    "selenium-webdriver": "^4.20.0"
+  }
+}
