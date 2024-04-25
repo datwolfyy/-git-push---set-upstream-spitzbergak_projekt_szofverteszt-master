@@ -4,8 +4,8 @@
   "description": "Szoftvertesztelés projekt",
   "main": "index.js",
   "scripts": {
-    "mocha": "mocha index.js"
-	"cy:open": "cypress open"
+    "mocha": "mocha",
+	  "cy:open": "cypress open"
   },
   "repository": {
     "type": "git",
