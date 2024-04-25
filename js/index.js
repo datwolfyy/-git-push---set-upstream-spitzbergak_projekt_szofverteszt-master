@@ -42,8 +42,6 @@ window.addEventListener("load", () => {
             case 'gyongybagoly':
                 selectedContent = "A Spitzbergák madárvilágának egyik jellegzetes képviselője a gyöngybagoly, amely szintén sarkvidéki alkalmazkodásokkal rendelkezik. A gyöngybagoly rendkívül nagy faj, súlyos testtömegével és vastag szőrzetével, amely lehetővé teszi számára, hogy a hideg éghajlatban is túléljen. A Spitzbergákon a gyöngybagoly fő zsákmányai közé tartoznak a rágcsálók és a madarak.";
                 break;
-            default:
-                selectedContent = "Nincs kiválasztott tartalom.";
         }
   
         allatContent.innerHTML = `<div class="selectedContent">${selectedContent}</div>`;
