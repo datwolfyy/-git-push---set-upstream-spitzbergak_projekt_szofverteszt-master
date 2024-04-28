@@ -13,6 +13,6 @@ window.addEventListener("load", () => {
     });
     // select
     // random képek lekérése a fejléc alá 
-    kep_leker();
+    kep_betolt();
     select_szovegek();
 });
