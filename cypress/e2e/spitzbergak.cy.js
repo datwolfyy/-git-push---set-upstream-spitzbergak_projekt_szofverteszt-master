@@ -5,12 +5,12 @@ describe('template spec', () => {
   
 	// HTML tesztek ----------------------------------------------------------------------------
 	
-	// 1. Ellenőrzi, hogy a címek a megfelelő helyekre mutatnak-e a navbarból
+	// 1. Ellenőrzi, hogy a címek mutatnak-e a navbarból valahova
 	it('Navigációs linkek ellenőrzése', () => {
 	  cy.visit('http://127.0.0.1:5500/index.html')
 	  cy.get('#navbar a').each((link) => {
 		cy.wrap(link).click() // Minden linket megnyit
-		cy.url().should('include', link.attr('href')) // Ellenőrzi, hogy a megfelelő helyre mutat-e
+		cy.url().should('include', link.attr('href'))
 	  })
 	})
   
