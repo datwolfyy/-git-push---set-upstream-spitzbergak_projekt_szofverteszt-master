@@ -6,7 +6,7 @@ function sleep(time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 }
 
-(async function topszotar() {
+(async function spitzbergak() {
     let driver = await new Builder().forBrowser(Browser.FIREFOX).build();
     try {        
         await driver.get("http://127.0.0.1:5500");
