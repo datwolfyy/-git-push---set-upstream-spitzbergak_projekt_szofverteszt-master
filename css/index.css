@@ -118,6 +118,7 @@ body>img {
 
 #galeria>div {
     flex-wrap: wrap;
+	justify-content: center;
 }
 
 #kepek {
